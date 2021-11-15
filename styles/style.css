@@ -73,6 +73,22 @@ body{
 	border-radius: 5%;
 }
 
+.card-body{
+	height: 500px;
+}
+
+.iconos {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.iconos img{
+	width: 30%;
+	height: 30%;
+	margin: 1%;
+}
+
 footer {
 	display: flex;
 	justify-content: space-between;
