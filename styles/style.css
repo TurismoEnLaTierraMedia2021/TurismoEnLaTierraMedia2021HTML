@@ -3,7 +3,7 @@
     --miColor1: #171813;
     --miColor2: #3B3A36;
     --miColor3: #70665A;
-    --miColor4: #D5CAC8;
+    --miColor4: #d5cac877;
     --miColor5: #C9AD9F;
     --miColor6: #E7CD79;
     --miColor7: #D88C4E;
@@ -37,6 +37,8 @@
 
 body{
 	background: #f4f2f2;
+	/*background-image: url("https://wallpaperaccess.com/full/838293.jpg");*/
+	
 }
 
 .lista {
