@@ -1,9 +1,23 @@
+:root{
+    --negroDark1:#020305;
+    --verdeDark1:#0B2522;
+	--verdeDark2:#123F23;
+	--verdeDark3:#153528;
+	--verdeDark4:#2C574E;
+	--verdeDark5:#3F706A;
+	--verdeDark6:#605A38;
+	--marronDark1:#AA7951;
+	--marronDark2:#976B2E;
+	--marronDark3:#824A17;
+} 
+
 body {
 	/*background: #020305;*/
 	color: #FFF3F0;
 	margin: 0;
 	font-family: 'Ubuntu';
-	background: linear-gradient(#020305, #020305, #020305, #020305, #020305, #020305, #020305, #0B2522);
+	background: linear-gradient(var(--negroDark1), var(--negroDark1), var(--negroDark1), var(--negroDark1), var(--negroDark1), var(--negroDark1), var(--negroDark1), var(--verdeDark1));
+	padding-top: 50px;
 }
 
 a {
@@ -15,6 +29,16 @@ seleccion de tag/etiqueta: etiqueta
 seleccion de clase: .clase
 seleccion de id: #id
 */
+
+
+.bg-NavDark{
+	background: linear-gradient(#0B2522, #0B2522, #020305);
+}
+.bg-NavDark img{ 
+	width: 30px;
+	height: 30px;
+}
+
 .header {
 	/*border-bottom: 1px solid #3F706A;*/
 	padding: .5em .5em 3em 1em;
@@ -22,6 +46,12 @@ seleccion de id: #id
 	justify-content: space-between;
 	align-items: center;
 	background: linear-gradient(#0B2522, #0B2522, #020305);
+}
+
+.header img{ 
+	width: 40px;
+	height: 40px;
+	
 }
 
 .header h1 {
@@ -96,6 +126,13 @@ aside {
 
 .lista a {
 	color: black;
+}
+
+.lista p{
+	width: 145px;
+	height: 420px;
+	text-align: inherit;
+	overflow: hidden;
 }
 
 .lista img {
