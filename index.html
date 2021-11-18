@@ -18,305 +18,364 @@
 	integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
 	crossorigin="anonymous"></script>
 <link rel="stylesheet" href="styles//style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<title>Turismo en la Tierra Media</title>
+<title>Turismo Tierra Media</title>
 <link rel="icon" type="image/x-icon" href="Imagenes/Varios/Unico_Anello.png">
 </head>
 
-<body>
+<body class="mt-5">
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-NavDark fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-miPrincipal fixed-top">
 		<div class="container-fluid">
 			<a href="#"><img class="logo" src="Imagenes/Varios/Unico_Anello.png" alt="Logo"> </a>
-		 	<a class="navbar-brand" href="#">Turismo en la Tierra Media</a>
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-			<ul class="navbar-nav  mb-2 mb-lg-0">
-			  <li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="#">Registro/Login</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">Dashboar</a>
-			  </li>
-			  <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				  Usuario
-				</a>
-				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-				  <li><a class="dropdown-item" href="#">Comprar</a></li>
-				  <li><a class="dropdown-item" href="#">Itinerario</a></li>
-				  <li><hr class="dropdown-divider"></li>
-				  <li><a class="dropdown-item" href="#">Cerrar cesion</a></li>
+			<a class="navbar-brand" href="#">Turismo en la Tierra Media</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li>
+						<div>
+							<button class="theme-btn light" onclick="setTheme('light')" title="Light mode">
+								Modo claro
+								<!-- <img src="Imagenes/Varios/golum.png" alt="" class="logo"> -->
+							  </button>
+							  <button class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
+								Modo oscuro
+								<!-- <img src="Imagenes/Varios/malos.jpg" alt="" class="logo"> -->
+							  </button>
+						</div>
+					</li>
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="#">Inicio</a></li>
+					<li class="nav-item"><a class="nav-link" href="#productos">Productos</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="#">Pricing</a>
+					</li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#"
+						id="navbarDropdownMenuLink" role="button"
+						data-bs-toggle="dropdown" aria-expanded="false"> Login/Register
+					</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Login</a></li>
+							<li><a class="dropdown-item" href="#">Register</a></li>
+							<li>
+								<div>
+									<button class="theme-btn light" onclick="setTheme('light')" title="Light mode">
+										Modo claro
+										<!-- <img src="Imagenes/Varios/golum.png" alt="" class="logo"> -->
+									  </button>
+									  <button class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
+										Modo oscuro
+										<!-- <img src="Imagenes/Varios/malos.jpg" alt="" class="logo"> -->
+									  </button>
+								</div>
+							</li>
+							<!-- <li><a class="dropdown-item" href="#">Something else
+									here</a></li> -->
+						</ul></li>
 				</ul>
-			  </li>
-			  <!-- <li class="nav-item">
-				<a class="nav-link disabled">Disabled</a>
-			  </li> -->
-			</ul>
-			<!-- <form class="d-flex">
-			  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-			  <button class="btn btn-outline-success" type="submit">Search</button>
-			</form> -->
-		  </div>
+			</div>
 		</div>
 	</nav>
 
+	<div class="flex container">
 
-
-	<div class="content">
-		
-		<div class="row justify-content-around">
-			<div class="col-9">
-				<h3>TITULO</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Aliquid, rem asperiores necessitatibus optio harum quidem eveniet.
-					Illo incidunt totam, animi minus eveniet officia neque perspiciatis
-					et. Iste possimus voluptate commodi?
-				</p>
-			</div>
-		</div>
-		
-		
-		<div class="row justify-content-around ">
-
-		</div>
-		
-
-
-	</div>
-	
-	
-
-	<div class="flex">
 
 		<main class="home">
-			<article id="inicio">
-				<h3>TITULO</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Aliquid, rem asperiores necessitatibus optio harum quidem eveniet.
-					Illo incidunt totam, animi minus eveniet officia neque perspiciatis
-					et. Iste possimus voluptate commodi?</p>
+			<article class="container mt-4 text-center">
+				<h1 class="display-2">La Tierra Media</h1>
+				<p class="lead">Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+					harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+					officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
 			</article>
 
-			<section>
-				<ul class="lista">
-					<li>
-						<article>
-							<img src="profile.jpg" alt="articulo">
-							<h3>
-								<b>Pack Aventura</b>
-							</h3>
-							<div>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Aliquid, rem asperiores necessitatibus optio harum quidem
-									eveniet. Illo incidunt totam, animi minus eveniet officia neque
-									perspiciatis et. Iste possimus voluptate commodi?</p>
+			
+			<section class="mt-5">				
+					<ul id="productos" class="lista text-center">
+						<li>
+							<div class="card">
+								<img src="Imagenes/Varios/hotSale.png" class="card-img-top" alt="articulo">
+								<div class="card-body">
+									<h5 class="card-title">Pack Aventura</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+										<div class="iconos">
+											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
+											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
+										</div>
+									<a href="#" class="btn btn-miPrincipal mt-1">Comprar</a>
+								</div>
 							</div>
-							<button>Detalles</button>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img src="profile.jpg" alt="articulo">
-							<h3>
-								<b>Pack Degustacion</b>
-							</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Aliquid, rem asperiores necessitatibus optio harum quidem
-								eveniet. Illo incidunt totam, animi minus eveniet officia neque
-								perspiciatis et. Iste possimus voluptate commodi?</p>
-							<button>Detalles</button>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img src="profile.jpg" alt="articulo">
-							<h3>
-								<b>Pack Paisajes</b>
-							</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Aliquid, rem asperiores necessitatibus optio harum quidem
-								eveniet. Illo incidunt totam, animi minus eveniet officia neque
-								perspiciatis et. Iste possimus voluptate commodi?</p>
-							<button>Detalles</button>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img src="profile.jpg" alt="articulo">
-							<h3>
-								<b>Pack Locuras</b>
-							</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Aliquid, rem asperiores necessitatibus optio harum quidem
-								eveniet. Illo incidunt totam, animi minus eveniet officia neque
-								perspiciatis et. Iste possimus voluptate commodi?</p>
-							<button>Detalles</button>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img src="profile.jpg" alt="articulo">
-							<h3>
-								<b>Pack Festin</b>
-							</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Aliquid, rem asperiores necessitatibus optio harum quidem
-								eveniet. Illo incidunt totam, animi minus eveniet officia neque
-								perspiciatis et. Iste possimus voluptate commodi?</p>
-							<button>Detalles</button>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img src="profile.jpg" alt="articulo">
-							<h3>
-								<b>Pack HotSale</b>
-							</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Aliquid, rem asperiores necessitatibus optio harum quidem
-								eveniet. Illo incidunt totam, animi minus eveniet officia neque
-								perspiciatis et. Iste possimus voluptate commodi?</p>
-							<button>Detalles</button>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img src="Imagenes/Atracciones/1_Moria4.jpg" alt="articulo">
-							<h3>
-								<b>Moria</b>
-							</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Aliquid, rem asperiores necessitatibus optio harum quidem
-								eveniet. Illo incidunt totam, animi minus eveniet officia neque
-								perspiciatis et. Iste possimus voluptate commodi?</p>
-							<button>Detalles</button>
-						</article>
-
-					</li>
-					<li>
-						<article>
-							<img src="Imagenes/Atracciones/2_MinasTirith2.jpg" alt="articulo">
-							<h3>
-								<b>Minas Tirith</b>
-							</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Aliquid, rem asperiores necessitatibus optio harum quidem
-								eveniet. Illo incidunt totam, animi minus eveniet officia neque
-								perspiciatis et. Iste possimus voluptate commodi?</p>
-							<button>Detalles</button>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img src="Imagenes/Atracciones/3_LaComarca3.jpg" alt="articulo">
-							<h3>
-								<b>La Comarca</b>
-							</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Aliquid, rem asperiores necessitatibus optio harum quidem
-								eveniet. Illo incidunt totam, animi minus eveniet officia neque
-								perspiciatis et. Iste possimus voluptate commodi?</p>
-							<button>Detalles</button>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img src="Imagenes/Atracciones/4_Mordor3.jpg" alt="articulo">
-							<h3>
-								<b>Mordor</b>
-							</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Aliquid, rem asperiores necessitatibus optio harum quidem
-								eveniet. Illo incidunt totam, animi minus eveniet officia neque
-								perspiciatis et. Iste possimus voluptate commodi?</p>
-							<button>Detalles</button>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img src="Imagenes/Atracciones/5_AbismoDeHelm1.jpg"
-								alt="articulo">
-							<h3>
-								<b>Abismo de Helm</b>
-							</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Aliquid, rem asperiores necessitatibus optio harum quidem
-								eveniet. Illo incidunt totam, animi minus eveniet officia neque
-								perspiciatis et. Iste possimus voluptate commodi?</p>
-							<button>Detalles</button>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img src="Imagenes/Atracciones/6_Lothlorien4.jpg" alt="articulo">
-							<h3>
-								<b>Lothlorien</b>
-							</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Aliquid, rem asperiores necessitatibus optio harum quidem
-								eveniet. Illo incidunt totam, animi minus eveniet officia neque
-								perspiciatis et. Iste possimus voluptate commodi?</p>
-							<button>Detalles</button>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img src="Imagenes/Atracciones/7_Erebor2.jpg" alt="articulo">
-							<h3>
-								<b>Erebor</b>
-							</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Aliquid, rem asperiores necessitatibus optio harum quidem
-								eveniet. Illo incidunt totam, animi minus eveniet officia neque
-								perspiciatis et. Iste possimus voluptate commodi?</p>
-							<button>Detalles</button>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img src="Imagenes/Atracciones/8_BosqueNegro4.jpg" alt="articulo">
-							<h3>
-								<b>Bosque Negro</b>
-							</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Aliquid, rem asperiores necessitatibus optio harum quidem
-								eveniet. Illo incidunt totam, animi minus eveniet officia neque
-								perspiciatis et. Iste possimus voluptate commodi?</p>
-							<button>Detalles</button>
-						</article>
-					</li>
-					<li>
-						<article>
-							<img src="Imagenes/Atracciones/9_ElPonyPisador1.jpg"
-								alt="articulo">
-							<h3>
-								<b>Taberna Pony Pisador</b>
-							</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Aliquid, rem asperiores necessitatibus optio harum quidem
-								eveniet. Illo incidunt totam, animi minus eveniet officia neque
-								perspiciatis et. Iste possimus voluptate commodi?</p>
-							<button>Detalles</button>
-						</article>
-					</li>
-				</ul>
+						</li>
+						<li>
+							<div class="card">
+								<img src="Imagenes/Varios/hotSale.png" class="card-img-top" alt="articulo">
+								<div class="card-body">
+									<h5 class="card-title">Pack Degustacion</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+										<div class="iconos">
+											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
+											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
+										</div>
+									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<img src="Imagenes/Varios/hotSale.png" class="card-img-top" alt="articulo">
+								<div class="card-body">
+									<h5 class="card-title">Pack Paisajes</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+										<div class="iconos">
+											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
+											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
+										</div>
+									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<img src="Imagenes/Varios/hotSale.png" class="card-img-top" alt="articulo">
+								<div class="card-body">
+									<h5 class="card-title">Pack Locuras</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+										<div class="iconos">
+											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
+											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
+										</div>
+									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<img src="Imagenes/Varios/hotSale.png" class="card-img-top" alt="articulo">
+								<div class="card-body">
+									<h5 class="card-title">Pack Festin</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+										<div class="iconos">
+											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
+											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
+										</div>
+									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<img src="Imagenes/Varios/hotSale.png" class="card-img-top" alt="articulo">
+								<div class="card-body">
+									<h5 class="card-title">Pack HotSale</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+										<div class="iconos">
+											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
+											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
+										</div>
+									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<img src="Imagenes/Atracciones/1_Moria4.jpg" class="card-img-top"
+									alt="articulo">
+								<div class="card-body">
+									<h5 class="card-title">Moria</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+										<div class="iconos">
+											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
+											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
+										</div>
+									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<img src="Imagenes/Atracciones/2_MinasTirith2.jpg"
+									class="card-img-top" alt="articulo">
+								<div class="card-body">
+									<h5 class="card-title">Minas Tirith</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+										<div class="iconos">
+											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
+											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
+										</div>
+									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<img src="Imagenes/Atracciones/3_LaComarca3.jpg"
+									class="card-img-top" alt="articulo">
+								<div class="card-body">
+									<h5 class="card-title">La Comarca</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+										<div class="iconos">
+											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
+											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
+										</div>
+									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								</div>
+							</div>
+						</li>
+	
+						<li>
+							<div class="card">
+								<img src="Imagenes/Atracciones/4_Mordor3.jpg"
+									class="card-img-top" alt="articulo">
+								<div class="card-body">
+									<h5 class="card-title">Mordor</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+										<div class="iconos">
+											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
+											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
+										</div>
+									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<img src="Imagenes/Atracciones/5_AbismoDeHelm1.jpg"
+									class="card-img-top" alt="articulo">
+								<div class="card-body">
+									<h5 class="card-title">Abismo de Helm</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+										<div class="iconos">
+											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
+											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
+										</div>
+									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<img src="Imagenes/Atracciones/6_Lothlorien4.jpg"
+									class="card-img-top" alt="articulo">
+								<div class="card-body">
+									<h5 class="card-title">Lothlorien</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+										<div class="iconos">
+											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
+											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
+										</div>
+									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<img src="Imagenes/Atracciones/7_Erebor2.jpg"
+									class="card-img-top" alt="articulo">
+								<div class="card-body">
+									<h5 class="card-title">Erebor</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+										<div class="iconos">
+											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
+											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
+										</div>
+									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<img src="Imagenes/Atracciones/8_BosqueNegro4.jpg"
+									class="card-img-top" alt="articulo">
+								<div class="card-body">
+									<h5 class="card-title">Bosque Negro</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+										<div class="iconos">
+											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
+											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
+										</div>
+									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="card">
+								<img src="Imagenes/Atracciones/9_ElPonyPisador1.jpg"
+									class="card-img-top" alt="articulo">
+								<div class="card-body">
+									<h5 class="card-title">Taberna Pony Pisador</h5>
+									<p class="card-text">Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+										<div class="iconos">
+											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
+											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
+										</div>
+									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								</div>
+							</div>
+						</li>
+					</ul>
 			</section>
 		</main>
-	</div>
+	</div> 
 
-	<footer>
+	<footer class="mt-5">
 		<div>
-			<b>Turismo en la Tierra Media</b>
+			<h4>Turismo en la Tierra Media</h4>
 		</div>
 		<div>
-			<b>Desarrollado por ..</b>
+			<h4>Desarrollado por ..</h4>
 		</div>
 
 	</footer>
-
 </body>
-
-</html>
+<script src="main.js"></script>
+</html>  
