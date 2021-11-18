@@ -22,13 +22,13 @@
 .btn-miPrincipal{
     background: var(--miColor7);
     border-color: var(--miColor7);
-	color:var(--miBackground);
+    color:var(--miBackground);
 }
 
 .btn-miPrincipal:hover{
     background: var(--miColor8);
     border-color: var(--miColor8);
-	color:var(--miBackground);
+    color:var(--miBackground);
 }
 
 .color-miPrincipal{
@@ -36,62 +36,65 @@
 }
 
 body{
-	background: #f4f2f2;
-	/*background-image: url("https://wallpaperaccess.com/full/838293.jpg");*/
-	
+    background: #f4f2f2;
+    
+}
+
+.navbar .logo{
+    width: 30px;
+    margin-right: 0.7em;
 }
 
 .lista {
-	display: flex;
-	padding: 1em;
-	border-radius: 7px;
-	border: 1px solid rgba(0,0,0,.125);
-	background-color:  var(--miColor4);
-	background: -moz-linear-gradient(-45deg, #D5CAC8 0%, #f4f2f2 50%, #D5CAC8 100%);
-	background: -webkit-linear-gradient(-45deg, #D5CAC8 0%, #f4f2f2 50%, #D5CAC8 100%);
-	background: linear-gradient(135deg, #D5CAC8 0%, #f4f2f2 50%, #D5CAC8 100%);
-	list-style: none;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
+    display: flex;
+    padding: 1em;
+    border-radius: 7px;
+    border: 1px solid rgba(0,0,0,.125);
+    background: linear-gradient(135deg, #D5CAC8 0%, #f4f2f2 50%, #D5CAC8 100%);
+    /*background: url("C:/Users/Ariel/git/TurismoEnLaTierraMedia2021HTML/Imagenes/Varios/Prueba_transparencia.png");*/
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .lista li {
-	/*width: 22em;*/
-	margin: .4em .4em;
-	padding: 7px 10px;
-	display: flex;
-	justify-content: space-evenly;
+    margin: .4em .4em;
+    padding: 7px 10px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .card:hover {
-	transform: scale(1.04);
-	box-shadow: .3em .3em .3em #848a88, -.2em -.2em 4em #848a88;
-	transition: 400ms;
+    transform: scale(1.04);
+    box-shadow: .3em .3em .3em #848a88, -.2em -.2em 4em #848a88;
+    transition: 400ms;
 }
 
 .card-img-top {
-	margin: 5%;
-	border-radius: 5%;
-	width: 90%;
+    margin: 5%;
+    border-radius: 5%;
+    width: 90%;
 }
 
 .card {
-	border-radius: 5%;
+    border-radius: 5%;
+    max-width: 25rem;
+    min-width: 15rem;
 }
 
 .iconos {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .iconos img{
-	width: 30%;
-	height: 30%;
-	margin: 1%;
+    width: 30%;
+    height: 30%;
+    margin: 1%;
 }
 
 footer {
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
