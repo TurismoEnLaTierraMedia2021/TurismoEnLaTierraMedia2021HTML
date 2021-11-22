@@ -1,34 +1,61 @@
-:root{
+:root,
+/*Modo claro*/
+:root.ligth{
     --miBackground: #f4f2f2;
     --miColor1: #171813;
     --miColor2: #3B3A36;
     --miColor3: #70665A;
     --miColor4: #d5cac877;
-    --miColor5: #C9AD9F;
+    --miColor5: #C9AD9F;    
     --miColor6: #E7CD79;
     --miColor7: #D88C4E;
     --miColor8: #AB654B;
     --miColor9: #75573D;
     --miColor10: #463B27;
+	--miColor11:#D5CAC8;
 
+	--sadowCard:#848a88;
+	--fondoCard: var(--miBackground);
     --miPrincipal: var(--miColor8);
     --miSecundario: var(--miColor8);
 }
 
+/*Modo oscuro*/
+ :root.dark{
+	--miBackground:#020305;
+    --miColor1:#020305;
+    --miColor2:#0B2522;
+	--miColor3:#123F23;
+	--miColor4:#153528;
+	--miColor5:#2C574E; 
+	--miColor6:#3F706A;
+	--miColor7:#605A38;
+	--miColor8:#AA7951;
+	--miColor9:#976B2E;
+	--miColor10:#824A17;
+	--miColor11:#0B2522;
+
+	--sadowCard:#848a88;
+	--fondoCard: var(--miColor5);
+	--miPrincipal: var(--miColor2);
+    --miSecundario: var(--miColor8);
+} 
+
 .bg-miPrincipal{
-    background: var(--miPrincipal);
+	background: linear-gradient(var(--miPrincipal), var(--miPrincipal), var(--miPrincipal), var(--miPrincipal) , var(--miBackground));
+    /* background: var(--miPrincipal); */
 }
 
 .btn-miPrincipal{
     background: var(--miColor7);
     border-color: var(--miColor7);
-    color:var(--miBackground);
+	color:var(--miBackground);
 }
 
 .btn-miPrincipal:hover{
     background: var(--miColor8);
     border-color: var(--miColor8);
-    color:var(--miBackground);
+	color:var(--miBackground);
 }
 
 .color-miPrincipal{
@@ -36,65 +63,94 @@
 }
 
 body{
-    background: #f4f2f2;
-    
+	/* background: linear-gradient(var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miPrincipal));  */
+	background: var(--miBackground);
+	
 }
 
 .navbar .logo{
-    width: 30px;
-    margin-right: 0.7em;
+	width: 30px;
+	margin-right: 0.7em;
 }
 
 .lista {
-    display: flex;
-    padding: 1em;
-    border-radius: 7px;
-    border: 1px solid rgba(0,0,0,.125);
-    background: linear-gradient(135deg, #D5CAC8 0%, #f4f2f2 50%, #D5CAC8 100%);
-    /*background: url("C:/Users/Ariel/git/TurismoEnLaTierraMedia2021HTML/Imagenes/Varios/Prueba_transparencia.png");*/
-    list-style: none;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+	display: flex;
+	padding: 1em;
+	border-radius: 7px;
+	border: 1px solid rgba(0,0,0,.125);
+	background: linear-gradient(135deg, var(--miColor11) 0%, var(--miBackground) 50%, var(--miColor11) 100%);  
+	list-style: none;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
+.centrado {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 18px;
+}
+.contenedor {
+	position: relative;
+  }
+
+#fondo{
+	opacity: 0.5;
+	width: 100%;
+}
+
+
 .lista li {
-    margin: .4em .4em;
-    padding: 7px 10px;
-    display: flex;
-    justify-content: space-evenly;
+	margin: .4em .4em;
+	padding: 7px 10px;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .card:hover {
-    transform: scale(1.04);
-    box-shadow: .3em .3em .3em #848a88, -.2em -.2em 4em #848a88;
-    transition: 400ms;
+	transform: scale(1.04);
+	box-shadow: .3em .3em .3em var(--sadowCard), -.2em -.2em 4em var(--sadowCard);
+	transition: 400ms;
 }
 
 .card-img-top {
-    margin: 5%;
-    border-radius: 5%;
-    width: 90%;
+	margin: 5%;
+	border-radius: 5%;
+	width: 90%;
 }
 
 .card {
-    border-radius: 5%;
-    max-width: 25rem;
-    min-width: 15rem;
+	background: var(--fondoCard);
+	border-radius: 5%;
+	max-width: 25rem;
+	min-width: 15rem;
 }
 
 .iconos {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .iconos img{
-    width: 30%;
-    height: 30%;
-    margin: 1%;
+	width: 30%;
+	height: 30%;
+	margin: 1%;
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.theme-btn{
+	background: none;
+	color: salmon;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
