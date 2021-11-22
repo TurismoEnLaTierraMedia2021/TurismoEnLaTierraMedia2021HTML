@@ -35,7 +35,7 @@
 	--miColor10:#824A17;
 	--miColor11:#0B2522;
 
-	--sadowCard:#848a88;
+	--sadowCard:#000000;
 	--fondoCard: var(--miColor5);
 	--miPrincipal: var(--miColor2);
     --miSecundario: var(--miColor8);
@@ -153,4 +153,8 @@ footer {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+.dropdown-menu{
+	background: var(--miPrincipal);
 }
