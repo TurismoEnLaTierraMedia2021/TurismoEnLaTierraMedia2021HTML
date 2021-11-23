@@ -18,6 +18,7 @@
 	--fondoCard: var(--miBackground);
     --miPrincipal: var(--miColor8);
     --miSecundario: var(--miColor8);
+	--miLetra: #000;
 }
 
 /*Modo oscuro*/
@@ -39,6 +40,7 @@
 	--fondoCard: var(--miColor5);
 	--miPrincipal: var(--miColor2);
     --miSecundario: var(--miColor8);
+	--miLetra: #fff;
 } 
 
 .bg-miPrincipal{
@@ -65,6 +67,7 @@
 body{
 	/* background: linear-gradient(var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miPrincipal));  */
 	background: var(--miBackground);
+	color: var(--miLetra);
 	
 }
 
@@ -147,7 +150,6 @@ footer {
 
 .theme-btn{
 	background: none;
-	color: salmon;
 	border: none;
 	padding: 0;
 	font: inherit;
@@ -157,4 +159,17 @@ footer {
 
 .dropdown-menu{
 	background: var(--miPrincipal);
+	
+}
+
+.dropdown-item{
+	color: var(--miLetra);
+}
+
+form h2{
+	margin: 2rem;
+}
+input{
+	border: none;
+	border-radius: 4px;
 }
