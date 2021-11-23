@@ -42,8 +42,8 @@
 } 
 
 .bg-miPrincipal{
-	background: linear-gradient(var(--miPrincipal), var(--miPrincipal), var(--miPrincipal), var(--miPrincipal) , var(--miBackground));
-    /* background: var(--miPrincipal); */
+	/*background: linear-gradient(var(--miPrincipal), var(--miPrincipal), var(--miPrincipal), var(--miPrincipal) , var(--miBackground));*/
+    background: var(--miPrincipal);
 }
 
 .btn-miPrincipal{
