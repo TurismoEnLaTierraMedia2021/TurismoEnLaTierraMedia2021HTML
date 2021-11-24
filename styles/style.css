@@ -19,6 +19,7 @@
     --miPrincipal: var(--miColor8);
     --miSecundario: var(--miColor8);
 	--miLetra: #000;
+	--miColorBoton: var(--miBackground);
 }
 
 /*Modo oscuro*/
@@ -41,6 +42,7 @@
 	--miPrincipal: var(--miColor2);
     --miSecundario: var(--miColor8);
 	--miLetra: #fff;
+	--miColorBoton: #f4f2f2;
 } 
 
 .bg-miPrincipal{
@@ -51,13 +53,13 @@
 .btn-miPrincipal{
     background: var(--miColor7);
     border-color: var(--miColor7);
-	color:var(--miBackground);
+	color:var(--miColorBoton);
 }
 
 .btn-miPrincipal:hover{
     background: var(--miColor8);
     border-color: var(--miColor8);
-	color:var(--miBackground);
+	color:var(--miColorBoton);
 }
 
 .color-miPrincipal{
@@ -76,15 +78,24 @@ body{
 	margin-right: 0.7em;
 }
 
+.home{
+	margin-top: 6em;
+}
+
 .lista {
 	display: flex;
 	padding: 1em;
 	border-radius: 7px;
 	border: 1px solid rgba(0,0,0,.125);
-	background: linear-gradient(135deg, var(--miColor11) 0%, var(--miBackground) 50%, var(--miColor11) 100%);  
+	/* background: linear-gradient(135deg, var(--miColor11) 0%, var(--miBackground) 50%, var(--miColor11) 100%);   */
+	background: var(--miColor11);
 	list-style: none;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+}
+
+.lista table{
+	color: var(--miLetra);
 }
 
 .centrado {
@@ -169,7 +180,25 @@ footer {
 form h2{
 	margin: 2rem;
 }
-input{
-	border: none;
-	border-radius: 4px;
+
+a{
+	text-decoration: none;
+	color: var(--miColorBoton);
+}
+
+a:hover{
+	color: var(--miColorBoton);
+}
+
+#fotodashboard{
+	width: 50%;
+}
+
+td#foto{
+	width: 12%;
+}
+
+td#foto img:hover{
+	transform: scale(3);
+	transition: 400ms;
 }
