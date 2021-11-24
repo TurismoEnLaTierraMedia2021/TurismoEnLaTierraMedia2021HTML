@@ -22,8 +22,7 @@
 <link rel="icon" type="image/x-icon" href="Imagenes/Varios/Unico_Anello.png">
 </head>
 
-<body class="mt-5">
-
+<body class="">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-miPrincipal fixed-top">
 		<div class="container-fluid">
 			<a href="#"><img class="logo" src="Imagenes/Varios/Unico_Anello.png" alt="Logo"> </a>
@@ -36,6 +35,11 @@
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
 				<ul class="navbar-nav">
+					<!-- <li>
+						<audio autoplay controls loop> 
+							<source src="sound/celta.mp3" type="audio/mp3">  
+						</audio>                                
+					</li> -->
 					<li>
 							<div class="themeChanger">
 							<button class="theme-btn light" onclick="setTheme('light')" title="Light mode">
@@ -62,15 +66,29 @@
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<li><a class="dropdown-item" href="registerLogin.html">Login</a></li>
 							<li><a class="dropdown-item" href="registerLogin.html">Register</a></li>
-						</ul></li>
+						</ul>
+					</li>
+
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#"
+						id="navbarDropdownMenuLink" role="button"
+						data-bs-toggle="dropdown" aria-expanded="false"> Nombre de Usuario
+					</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="registerLogin.html">Itinerario</a></li>
+							<li><a class="dropdown-item" >Tiempo disponible</a></li>
+							<li><a class="dropdown-item" >Dinero disponible</a></li>
+							<li><a class="dropdown-item" href="dashboard.html">Panel de admin</a></li>   <!-- Se ven unicamente si sos admin -->
+							<li><a class="dropdown-item" href="registerLogin.html">Cerrar sesion</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<div class="flex container">
-
-
+	
+	<div class="flex container mt-5">
 		<main class="home">
 			<article class="container mt-4 text-center">
 				<h1 class="display-2">La Tierra Media</h1>
@@ -353,7 +371,7 @@
 		</main>
 	</div> 
 
-	<footer class="mt-5 m-2">
+	<footer class="m-2">
 		<div>
 			<h4>Turismo en la Tierra Media</h4>
 		</div>
