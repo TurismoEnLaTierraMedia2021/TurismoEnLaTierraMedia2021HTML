@@ -19,39 +19,73 @@
 	crossorigin="anonymous"></script>
 <link rel="stylesheet" href="styles//style.css">
 <title>Turismo Tierra Media</title>
-<link rel="icon" type="image/x-icon" href="Imagenes/Varios/Unico_Anello.png">
+<link rel="icon" type="image/x-icon"
+	href="Imagenes/Varios/Unico_Anello.png">
 </head>
 
 <body class="">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-miPrincipal fixed-top">
+	<nav
+		class="navbar navbar-expand-lg navbar-dark bg-miPrincipal fixed-top">
 		<div class="container-fluid">
-			<a href="#"><img class="logo" src="Imagenes/Varios/Unico_Anello.png" alt="Logo"> </a>
-			<a class="navbar-brand" href="#">Turismo en la Tierra Media</a>
+			<a href="#"><img class="logo1"
+				src="Imagenes/Varios/Unico_Anello.png" alt="Logo"> </a> <a
+				class="navbar-brand" href="#">Turismo en la Tierra Media</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
 				aria-controls="navbarNavDropdown" aria-expanded="false"
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+			<div class="collapse navbar-collapse justify-content-end"
+				id="navbarNavDropdown">
 				<ul class="navbar-nav">
 					<!-- <li>
 						<audio autoplay controls loop> 
 							<source src="sound/celta.mp3" type="audio/mp3">  
 						</audio>                                
 					</li> -->
+					<!-- 					<li> -->
+					<!-- 							<div class="themeChanger"> -->
+					<!-- 							<button class="theme-btn light" onclick="setTheme('light')" title="Light mode"> -->
+					<!-- 								Modo claro -->
+					<!-- 								<img src="Imagenes/Varios/1GandalfIcon.png" alt="Modo claro" class="logo"> -->
+					<!-- 							  </button> -->
+					<!-- 							  <button class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode"> -->
+					<!-- 								Modo oscuro -->
+					<!-- 								<img src="Imagenes/Varios/1AngmarIcon.png" alt="Modo oscuro" class="logo"> -->
+					<!-- 							  </button> -->
+					<!-- 						</div> -->
+					<!-- 					</li> -->
+					<div class=cambiaTema>
 					<li>
-							<div class="themeChanger">
-							<button class="theme-btn light" onclick="setTheme('light')" title="Light mode">
+						<div class="themeChanger">
+							<button class="theme-btn light" onclick="setTheme('light')"
+								title="Light mode">
 								<!--Modo claro -->
-								<img src="Imagenes/Varios/1GandalfIcon.png" alt="Modo claro" class="logo">
-							  </button>
-							  <button class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
-								<!-- Modo oscuro -->
-								<img src="Imagenes/Varios/1AngmarIcon.png" alt="Modo oscuro" class="logo">
-							  </button>
+								<img src="Imagenes/Varios/1GandalfIcon.png" alt="Modo claro"
+									class="logo">
+							</button>
 						</div>
 					</li>
+					<li>
+						<div>
+							<input type="checkbox" class="checkbox" id="chk" /> <label
+								class="label" for="chk">
+								<div class="ball"></div>
+							</label>
+						</div>
+					</li>
+					<li>
+						<div class="themeChanger">
+							<button class="theme-btn dark" onclick="setTheme('dark')"
+								title="Dark mode">
+								<!-- Modo oscuro -->
+								<img src="Imagenes/Varios/1AngmarIcon.png" alt="Modo oscuro"
+									class="logo">
+							</button>
+						</div>
+					</li>
+					</div>
 					<li class="nav-item"><a class="nav-link active"
 						aria-current="page" href="#">Inicio</a></li>
 					<li class="nav-item"><a class="nav-link" href="#productos">Productos</a>
@@ -61,33 +95,34 @@
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#"
 						id="navbarDropdownMenuLink" role="button"
-						data-bs-toggle="dropdown" aria-expanded="false"> Login/Register
-					</a>
+						data-bs-toggle="dropdown" aria-expanded="false">
+							Login/Register </a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<li><a class="dropdown-item" href="registerLogin.html">Login</a></li>
 							<li><a class="dropdown-item" href="registerLogin.html">Register</a></li>
-						</ul>
-					</li>
+						</ul></li>
 
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#"
 						id="navbarDropdownMenuLink" role="button"
-						data-bs-toggle="dropdown" aria-expanded="false"> Nombre de Usuario
-					</a>
+						data-bs-toggle="dropdown" aria-expanded="false"> Nombre de
+							Usuario </a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<li><a class="dropdown-item" href="registerLogin.html">Itinerario</a></li>
-							<li><a class="dropdown-item" >Tiempo disponible</a></li>
-							<li><a class="dropdown-item" >Dinero disponible</a></li>
-							<li><a class="dropdown-item" href="dashboard.html">Panel de admin</a></li>   <!-- Se ven unicamente si sos admin -->
-							<li><a class="dropdown-item" href="registerLogin.html">Cerrar sesion</a></li>
-						</ul>
-					</li>
+							<li><a class="dropdown-item">Tiempo disponible</a></li>
+							<li><a class="dropdown-item">Dinero disponible</a></li>
+							<li><a class="dropdown-item" href="dashboard.html">Panel
+									de admin</a></li>
+							<!-- Se ven unicamente si sos admin -->
+							<li><a class="dropdown-item" href="registerLogin.html">Cerrar
+									sesion</a></li>
+						</ul></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	
+
 	<div class="flex container mt-5">
 		<main class="home">
 			<article class="container mt-4 text-center">
@@ -98,278 +133,314 @@
 					officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
 			</article>
 
-			
-			<section class="mt-5">				
-					<ul id="productos" class="lista text-center">
-						<li>
-							<div class="card">
-								<img src="Imagenes/Varios/hotSale.png" class="card-img-top" alt="articulo">
-								<div class="card-body">
-									<h5 class="card-title">Pack Aventura</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
-										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
-										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
-										<div class="iconos">
-											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
-											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
-										</div>
-									<a href="#" class="btn btn-miPrincipal mt-1">Comprar</a>
+
+			<section class="mt-5">
+				<ul id="productos" class="lista text-center">
+					<li>
+						<div class="card">
+							<img src="Imagenes/Varios/hotSale.png" class="card-img-top"
+								alt="articulo">
+							<div class="card-body">
+								<h5 class="card-title">Pack Aventura</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+									harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+									officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+								<div class="iconos">
+									<span><img alt="Precio"
+										src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span> <span><img
+										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
+										6 horas</span>
 								</div>
+								<a href="#" class="btn btn-miPrincipal mt-1">Comprar</a>
 							</div>
-						</li>
-						<li>
-							<div class="card">
-								<img src="Imagenes/Varios/hotSale.png" class="card-img-top" alt="articulo">
-								<div class="card-body">
-									<h5 class="card-title">Pack Degustacion</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
-										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
-										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
-										<div class="iconos">
-											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
-											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
-										</div>
-									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<img src="Imagenes/Varios/hotSale.png" class="card-img-top"
+								alt="articulo">
+							<div class="card-body">
+								<h5 class="card-title">Pack Degustacion</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+									harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+									officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+								<div class="iconos">
+									<span><img alt="Precio"
+										src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span> <span><img
+										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
+										6 horas</span>
 								</div>
+								<a href="#" class="btn btn-miPrincipal">Comprar</a>
 							</div>
-						</li>
-						<li>
-							<div class="card">
-								<img src="Imagenes/Varios/hotSale.png" class="card-img-top" alt="articulo">
-								<div class="card-body">
-									<h5 class="card-title">Pack Paisajes</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
-										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
-										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
-										<div class="iconos">
-											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
-											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
-										</div>
-									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<img src="Imagenes/Varios/hotSale.png" class="card-img-top"
+								alt="articulo">
+							<div class="card-body">
+								<h5 class="card-title">Pack Paisajes</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+									harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+									officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+								<div class="iconos">
+									<span><img alt="Precio"
+										src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span> <span><img
+										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
+										6 horas</span>
 								</div>
+								<a href="#" class="btn btn-miPrincipal">Comprar</a>
 							</div>
-						</li>
-						<li>
-							<div class="card">
-								<img src="Imagenes/Varios/hotSale.png" class="card-img-top" alt="articulo">
-								<div class="card-body">
-									<h5 class="card-title">Pack Locuras</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
-										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
-										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
-										<div class="iconos">
-											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
-											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
-										</div>
-									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<img src="Imagenes/Varios/hotSale.png" class="card-img-top"
+								alt="articulo">
+							<div class="card-body">
+								<h5 class="card-title">Pack Locuras</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+									harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+									officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+								<div class="iconos">
+									<span><img alt="Precio"
+										src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span> <span><img
+										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
+										6 horas</span>
 								</div>
+								<a href="#" class="btn btn-miPrincipal">Comprar</a>
 							</div>
-						</li>
-						<li>
-							<div class="card">
-								<img src="Imagenes/Varios/hotSale.png" class="card-img-top" alt="articulo">
-								<div class="card-body">
-									<h5 class="card-title">Pack Festin</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
-										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
-										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
-										<div class="iconos">
-											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
-											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
-										</div>
-									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<img src="Imagenes/Varios/hotSale.png" class="card-img-top"
+								alt="articulo">
+							<div class="card-body">
+								<h5 class="card-title">Pack Festin</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+									harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+									officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+								<div class="iconos">
+									<span><img alt="Precio"
+										src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span> <span><img
+										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
+										6 horas</span>
 								</div>
+								<a href="#" class="btn btn-miPrincipal">Comprar</a>
 							</div>
-						</li>
-						<li>
-							<div class="card">
-								<img src="Imagenes/Varios/hotSale.png" class="card-img-top" alt="articulo">
-								<div class="card-body">
-									<h5 class="card-title">Pack HotSale</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
-										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
-										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
-										<div class="iconos">
-											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
-											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
-										</div>
-									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<img src="Imagenes/Varios/hotSale.png" class="card-img-top"
+								alt="articulo">
+							<div class="card-body">
+								<h5 class="card-title">Pack HotSale</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+									harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+									officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+								<div class="iconos">
+									<span><img alt="Precio"
+										src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span> <span><img
+										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
+										6 horas</span>
 								</div>
+								<a href="#" class="btn btn-miPrincipal">Comprar</a>
 							</div>
-						</li>
-						<li>
-							<div class="card">
-								<img src="Imagenes/Atracciones/1_Moria4.jpg" class="card-img-top"
-									alt="articulo">
-								<div class="card-body">
-									<h5 class="card-title">Moria</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
-										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
-										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
-										<div class="iconos">
-											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
-											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
-										</div>
-									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<img src="Imagenes/Atracciones/1_Moria4.jpg" class="card-img-top"
+								alt="articulo">
+							<div class="card-body">
+								<h5 class="card-title">Moria</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+									harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+									officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+								<div class="iconos">
+									<span><img alt="Precio"
+										src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span> <span><img
+										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
+										6 horas</span>
 								</div>
+								<a href="#" class="btn btn-miPrincipal">Comprar</a>
 							</div>
-						</li>
-						<li>
-							<div class="card">
-								<img src="Imagenes/Atracciones/2_MinasTirith2.jpg"
-									class="card-img-top" alt="articulo">
-								<div class="card-body">
-									<h5 class="card-title">Minas Tirith</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
-										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
-										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
-										<div class="iconos">
-											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
-											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
-										</div>
-									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<img src="Imagenes/Atracciones/2_MinasTirith2.jpg"
+								class="card-img-top" alt="articulo">
+							<div class="card-body">
+								<h5 class="card-title">Minas Tirith</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+									harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+									officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+								<div class="iconos">
+									<span><img alt="Precio"
+										src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span> <span><img
+										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
+										6 horas</span>
 								</div>
+								<a href="#" class="btn btn-miPrincipal">Comprar</a>
 							</div>
-						</li>
-						<li>
-							<div class="card">
-								<img src="Imagenes/Atracciones/3_LaComarca3.jpg"
-									class="card-img-top" alt="articulo">
-								<div class="card-body">
-									<h5 class="card-title">La Comarca</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
-										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
-										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
-										<div class="iconos">
-											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
-											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
-										</div>
-									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<img src="Imagenes/Atracciones/3_LaComarca3.jpg"
+								class="card-img-top" alt="articulo">
+							<div class="card-body">
+								<h5 class="card-title">La Comarca</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+									harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+									officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+								<div class="iconos">
+									<span><img alt="Precio"
+										src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span> <span><img
+										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
+										6 horas</span>
 								</div>
+								<a href="#" class="btn btn-miPrincipal">Comprar</a>
 							</div>
-						</li>
-	
-						<li>
-							<div class="card">
-								<img src="Imagenes/Atracciones/4_Mordor3.jpg"
-									class="card-img-top" alt="articulo">
-								<div class="card-body">
-									<h5 class="card-title">Mordor</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
-										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
-										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
-										<div class="iconos">
-											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
-											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
-										</div>
-									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+						</div>
+					</li>
+
+					<li>
+						<div class="card">
+							<img src="Imagenes/Atracciones/4_Mordor3.jpg"
+								class="card-img-top" alt="articulo">
+							<div class="card-body">
+								<h5 class="card-title">Mordor</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+									harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+									officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+								<div class="iconos">
+									<span><img alt="Precio"
+										src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span> <span><img
+										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
+										6 horas</span>
 								</div>
+								<a href="#" class="btn btn-miPrincipal">Comprar</a>
 							</div>
-						</li>
-						<li>
-							<div class="card">
-								<img src="Imagenes/Atracciones/5_AbismoDeHelm1.jpg"
-									class="card-img-top" alt="articulo">
-								<div class="card-body">
-									<h5 class="card-title">Abismo de Helm</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
-										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
-										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
-										<div class="iconos">
-											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
-											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
-										</div>
-									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<img src="Imagenes/Atracciones/5_AbismoDeHelm1.jpg"
+								class="card-img-top" alt="articulo">
+							<div class="card-body">
+								<h5 class="card-title">Abismo de Helm</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+									harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+									officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+								<div class="iconos">
+									<span><img alt="Precio"
+										src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span> <span><img
+										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
+										6 horas</span>
 								</div>
+								<a href="#" class="btn btn-miPrincipal">Comprar</a>
 							</div>
-						</li>
-						<li>
-							<div class="card">
-								<img src="Imagenes/Atracciones/6_Lothlorien4.jpg"
-									class="card-img-top" alt="articulo">
-								<div class="card-body">
-									<h5 class="card-title">Lothlorien</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
-										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
-										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
-										<div class="iconos">
-											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
-											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
-										</div>
-									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<img src="Imagenes/Atracciones/6_Lothlorien4.jpg"
+								class="card-img-top" alt="articulo">
+							<div class="card-body">
+								<h5 class="card-title">Lothlorien</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+									harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+									officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+								<div class="iconos">
+									<span><img alt="Precio"
+										src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span> <span><img
+										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
+										6 horas</span>
 								</div>
+								<a href="#" class="btn btn-miPrincipal">Comprar</a>
 							</div>
-						</li>
-						<li>
-							<div class="card">
-								<img src="Imagenes/Atracciones/7_Erebor2.jpg"
-									class="card-img-top" alt="articulo">
-								<div class="card-body">
-									<h5 class="card-title">Erebor</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
-										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
-										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
-										<div class="iconos">
-											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
-											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
-										</div>
-									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<img src="Imagenes/Atracciones/7_Erebor2.jpg"
+								class="card-img-top" alt="articulo">
+							<div class="card-body">
+								<h5 class="card-title">Erebor</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+									harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+									officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+								<div class="iconos">
+									<span><img alt="Precio"
+										src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span> <span><img
+										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
+										6 horas</span>
 								</div>
+								<a href="#" class="btn btn-miPrincipal">Comprar</a>
 							</div>
-						</li>
-						<li>
-							<div class="card">
-								<img src="Imagenes/Atracciones/8_BosqueNegro4.jpg"
-									class="card-img-top" alt="articulo">
-								<div class="card-body">
-									<h5 class="card-title">Bosque Negro</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
-										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
-										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
-										<div class="iconos">
-											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
-											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
-										</div>
-									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<img src="Imagenes/Atracciones/8_BosqueNegro4.jpg"
+								class="card-img-top" alt="articulo">
+							<div class="card-body">
+								<h5 class="card-title">Bosque Negro</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+									harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+									officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+								<div class="iconos">
+									<span><img alt="Precio"
+										src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span> <span><img
+										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
+										6 horas</span>
 								</div>
+								<a href="#" class="btn btn-miPrincipal">Comprar</a>
 							</div>
-						</li>
-						<li>
-							<div class="card">
-								<img src="Imagenes/Atracciones/9_ElPonyPisador1.jpg"
-									class="card-img-top" alt="articulo">
-								<div class="card-body">
-									<h5 class="card-title">Taberna Pony Pisador</h5>
-									<p class="card-text">Lorem ipsum dolor sit amet consectetur
-										adipisicing elit. Aliquid, rem asperiores necessitatibus optio
-										harum quidem eveniet. Illo incidunt totam, animi minus eveniet
-										officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
-										<div class="iconos">
-											<span><img alt="Precio" src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span>
-											<span><img alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png"> 6 horas</span>
-										</div>
-									<a href="#" class="btn btn-miPrincipal">Comprar</a>
+						</div>
+					</li>
+					<li>
+						<div class="card">
+							<img src="Imagenes/Atracciones/9_ElPonyPisador1.jpg"
+								class="card-img-top" alt="articulo">
+							<div class="card-body">
+								<h5 class="card-title">Taberna Pony Pisador</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet consectetur
+									adipisicing elit. Aliquid, rem asperiores necessitatibus optio
+									harum quidem eveniet. Illo incidunt totam, animi minus eveniet
+									officia neque perspiciatis et. Iste possimus voluptate commodi?</p>
+								<div class="iconos">
+									<span><img alt="Precio"
+										src="Imagenes/Varios/GoldCoinsIcono.png"> 50 monedas</span> <span><img
+										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
+										6 horas</span>
 								</div>
+								<a href="#" class="btn btn-miPrincipal">Comprar</a>
 							</div>
-						</li>
-					</ul>
+						</div>
+					</li>
+				</ul>
 			</section>
 		</main>
-	</div> 
+	</div>
 
 	<footer class="m-2">
 		<div>
@@ -382,4 +453,4 @@
 	</footer>
 </body>
 <script src="main.js"></script>
-</html>  
+</html>
