@@ -1,6 +1,6 @@
 :root,
-/*Modo claro*/
-:root.ligth{
+
+.light-theme{
     --miBackground: #f4f2f2;
     --miColor1: #171813;
     --miColor2: #3B3A36;
@@ -26,7 +26,7 @@
 }
 
 /*Modo oscuro*/
- :root.dark{
+.dark-theme{
 	--miBackground:#020305;
     --miColor1:#020305;
     --miColor2:#0B2522;
@@ -49,6 +49,10 @@
 	--miColorBoton: #f4f2f2;
 	--ballColor: var(--miPrincipal)
 } 
+
+*{
+	transition: background-color 0.3s ease, color 0.03s ease;
+}
 
 .bg-miPrincipal{
 	/*background: linear-gradient(var(--miPrincipal), var(--miPrincipal), var(--miPrincipal), var(--miPrincipal) , var(--miBackground));*/
@@ -249,7 +253,7 @@ td#foto img:hover{
 	height: 22px;
 	width: 22px;
 	transform: translateX(0px);
-	transition: transform 0.2s linear;
+	transition: transform 0.1s linear;
 }
 
 .checkbox:checked + .label .ball {
