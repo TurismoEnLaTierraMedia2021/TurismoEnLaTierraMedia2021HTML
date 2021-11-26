@@ -54,6 +54,10 @@
 	transition: background-color 0.3s ease, color 0.03s ease;
 }
 
+.fuente{
+	font-family: 'IM Fell English SC', serif;
+}
+
 .bg-miPrincipal{
 	/*background: linear-gradient(var(--miPrincipal), var(--miPrincipal), var(--miPrincipal), var(--miPrincipal) , var(--miBackground));*/
     background: var(--miPrincipal);
@@ -259,3 +263,23 @@ td#foto img:hover{
 .checkbox:checked + .label .ball {
 	transform: translateX(24px);
 }
+
+.carousel-item.active {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 1em;
+	padding-bottom: 3em;
+}
+
+.carousel-item .card{
+	box-shadow: .1em .1em .1em var(--sadowCard), -.05em -.05em 1em var(--sadowCard);
+}
+
+.carousel-item .card:hover{
+	transform: scale(1); 
+}
+
+
+
+
+

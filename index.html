@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -24,27 +27,25 @@
 </head>
 
 <body class="light-theme">
-	<nav
-		class="navbar navbar-expand-lg navbar-dark bg-miPrincipal fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-miPrincipal fixed-top">
 		<div class="container-fluid">
 			<a href="#"><img class="logo1"
 				src="Imagenes/Varios/Unico_Anello.png" alt="Logo"> </a> <a
-				class="navbar-brand" href="#">Turismo en la Tierra Media</a>
+				class="navbar-brand fuente" href="#">Turismo en la Tierra Media</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
 				aria-controls="navbarNavDropdown" aria-expanded="false"
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse justify-content-end"
+			<div class="collapse navbar-collapse justify-content-end align-items-center"
 				id="navbarNavDropdown">
 				<ul class="navbar-nav">
-					<!-- <li>
-						<audio autoplay controls loop> 
-							<source src="sound/celta.mp3" type="audio/mp3">  
+					<li>
+						<audio autoplay controls loop > 
+							<source src="../../celta.mp3" type="audio/mp3">  
 						</audio>                                
-					</li> -->
-					
+					</li>
 					<div class=cambiaTema>
 					<li>
 						<div class="themeChanger">
@@ -61,43 +62,25 @@
 						</div>
 					</li>
 					<li>
-						<div class="themeChanger">
-							
+						<div class="themeChanger">	
 								<img src="Imagenes/Varios/1AngmarIcon.png" alt="Modo oscuro"
 									class="logo">
 						</div>
 					</li>
 					</div>
-					<li class="nav-item"><a class="nav-link active"
-						aria-current="page" href="#">Inicio</a></li>
-					<li class="nav-item"><a class="nav-link" href="#productos">Productos</a>
-					</li>
-					<li class="nav-item"><a class="nav-link" href="#">Pricing</a>
-					</li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#"
-						id="navbarDropdownMenuLink" role="button"
-						data-bs-toggle="dropdown" aria-expanded="false">
-							Login/Register </a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<li><a class="dropdown-item" href="registerLogin.html">Login</a></li>
-							<li><a class="dropdown-item" href="registerLogin.html">Register</a></li>
-						</ul></li>
-
+					<li class="nav-item"><a class="nav-link" aria-current="page" href="registerLogin.html">Registrarse/Iniciar Sesión</a></li>
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#"
 						id="navbarDropdownMenuLink" role="button"
 						data-bs-toggle="dropdown" aria-expanded="false"> Nombre de
 							Usuario </a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<li><a class="dropdown-item" href="registerLogin.html">Itinerario</a></li>
-							<li><a class="dropdown-item">Tiempo disponible</a></li>
-							<li><a class="dropdown-item">Dinero disponible</a></li>
-							<li><a class="dropdown-item" href="dashboard.html">Panel
-									de admin</a></li>
-							<!-- Se ven unicamente si sos admin -->
-							<li><a class="dropdown-item" href="registerLogin.html">Cerrar
-									sesion</a></li>
+                            <li><a class="dropdown-item" href="ofertar.html">Comprar</a></li>   <!--Desp se puede sacar-->
+                            <li><a class="dropdown-item" href="itinerario.html">Itinerario</a></li>
+                            <li><a class="dropdown-item" >Tiempo disponible<img src="Imagenes/Varios/RelojDeArena.png" style="width: 20px;" alt=""></a></li>
+                            <li><a class="dropdown-item" >Monedas disponible<img src="Imagenes/Varios/GoldCoins.png" style="width: 20px;" alt=""></a></li>
+                            <li><a class="dropdown-item" href="dashboard.html">Panel de admin</a></li>   <!-- Se ven unicamente si sos admin -->
+                            <li><a class="dropdown-item" href="index.html">Cerrar sesion</a></li>
 						</ul></li>
 				</ul>
 			</div>
@@ -108,7 +91,7 @@
 	<div class="flex container mt-5">
 		<main class="home">
 			<article class="container mt-4 text-center">
-				<h1 class="display-2">La Tierra Media</h1>
+				<h1 class="display-2 fuente" >La Tierra Media</h1>
 				<p class="lead">Lorem ipsum dolor sit amet consectetur
 					adipisicing elit. Aliquid, rem asperiores necessitatibus optio
 					harum quidem eveniet. Illo incidunt totam, animi minus eveniet
@@ -134,7 +117,7 @@
 										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
 										6 horas</span>
 								</div>
-								<a href="#" class="btn btn-miPrincipal mt-1">Comprar</a>
+								<a href="ofertar.html" class="btn btn-miPrincipal mt-1">Comprar</a>
 							</div>
 						</div>
 					</li>
@@ -154,7 +137,7 @@
 										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
 										6 horas</span>
 								</div>
-								<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								<a href="ofertar.html" class="btn btn-miPrincipal">Comprar</a>
 							</div>
 						</div>
 					</li>
@@ -174,7 +157,7 @@
 										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
 										6 horas</span>
 								</div>
-								<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								<a href="ofertar.html" class="btn btn-miPrincipal">Comprar</a>
 							</div>
 						</div>
 					</li>
@@ -194,7 +177,7 @@
 										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
 										6 horas</span>
 								</div>
-								<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								<a href="ofertar.html" class="btn btn-miPrincipal">Comprar</a>
 							</div>
 						</div>
 					</li>
@@ -214,7 +197,7 @@
 										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
 										6 horas</span>
 								</div>
-								<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								<a href="ofertar.html" class="btn btn-miPrincipal">Comprar</a>
 							</div>
 						</div>
 					</li>
@@ -234,7 +217,7 @@
 										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
 										6 horas</span>
 								</div>
-								<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								<a href="ofertar.html" class="btn btn-miPrincipal">Comprar</a>
 							</div>
 						</div>
 					</li>
@@ -254,7 +237,7 @@
 										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
 										6 horas</span>
 								</div>
-								<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								<a href="ofertar.html" class="btn btn-miPrincipal">Comprar</a>
 							</div>
 						</div>
 					</li>
@@ -274,7 +257,7 @@
 										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
 										6 horas</span>
 								</div>
-								<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								<a href="ofertar.html" class="btn btn-miPrincipal">Comprar</a>
 							</div>
 						</div>
 					</li>
@@ -294,7 +277,7 @@
 										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
 										6 horas</span>
 								</div>
-								<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								<a href="ofertar.html" class="btn btn-miPrincipal">Comprar</a>
 							</div>
 						</div>
 					</li>
@@ -315,7 +298,7 @@
 										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
 										6 horas</span>
 								</div>
-								<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								<a href="ofertar.html" class="btn btn-miPrincipal">Comprar</a>
 							</div>
 						</div>
 					</li>
@@ -335,7 +318,7 @@
 										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
 										6 horas</span>
 								</div>
-								<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								<a href="ofertar.html" class="btn btn-miPrincipal">Comprar</a>
 							</div>
 						</div>
 					</li>
@@ -355,7 +338,7 @@
 										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
 										6 horas</span>
 								</div>
-								<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								<a href="ofertar.html" class="btn btn-miPrincipal">Comprar</a>
 							</div>
 						</div>
 					</li>
@@ -375,7 +358,7 @@
 										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
 										6 horas</span>
 								</div>
-								<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								<a href="ofertar.html" class="btn btn-miPrincipal">Comprar</a>
 							</div>
 						</div>
 					</li>
@@ -395,7 +378,7 @@
 										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
 										6 horas</span>
 								</div>
-								<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								<a href="ofertar.html" class="btn btn-miPrincipal">Comprar</a>
 							</div>
 						</div>
 					</li>
@@ -415,7 +398,7 @@
 										alt="Duracion" src="Imagenes/Varios/RelojDeArenaIcono.png">
 										6 horas</span>
 								</div>
-								<a href="#" class="btn btn-miPrincipal">Comprar</a>
+								<a href="ofertar.html" class="btn btn-miPrincipal">Comprar</a>
 							</div>
 						</div>
 					</li>
@@ -424,7 +407,7 @@
 		</main>
 	</div>
 
-	<footer class="m-2">
+	<footer class="m-2 fuente">
 		<div>
 			<h4>Turismo en la Tierra Media</h4>
 		</div>

@@ -1,4 +1,4 @@
-//Cambio de Tema
+                //Cambio de Tema
 // Select the button
 const chk = document.getElementById('chk');
 // Select the theme preference from localStorage
@@ -27,7 +27,11 @@ chk.addEventListener('change', () => {
 });
 
 
-//Formulario
+
+
+
+
+              //Formulario
   // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
   'use strict'
@@ -48,3 +52,14 @@ chk.addEventListener('change', () => {
       }, false)
     })
 })()
+
+
+
+
+
+
+
+
+
+
+
