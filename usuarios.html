@@ -36,7 +36,7 @@
                 <ul class="navbar-nav">
                     <li>
 						<audio autoplay controls loop > 
-							<source src="../../celta.mp3" type="audio/mp3">  
+							<source src="sounds/The Hobbit Main Theme.mp3" type="audio/mp3">    
 						</audio>                                
 					</li>
 					<div class=cambiaTema>
@@ -70,10 +70,7 @@
                         data-bs-toggle="dropdown" aria-expanded="false"> Nombre de Usuario
                     </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="ofertar.html">Comprar</a></li>   <!--Desp se puede sacar-->
                             <li><a class="dropdown-item" href="registerLogin.html">Itinerario</a></li>
-                            <li><a class="dropdown-item" >Tiempo disponible<img src="Imagenes/Varios/RelojDeArena.png" style="width: 20px;" alt=""></a></li>
-                            <li><a class="dropdown-item" >Dinero disponible<img src="Imagenes/Varios/GoldCoins.png" style="width: 20px;" alt=""></a></li>
                             <li><a class="dropdown-item" href="dashboard.html">Panel de admin</a></li>   <!-- Se ven unicamente si sos admin -->
                             <li><a class="dropdown-item" href="">Cerrar sesion</a></li>
                         </ul>
@@ -87,52 +84,54 @@
     <div class="flex container">
         <section class="lista mt-5">
             <h2 class="fuente">Usuarios</h2>
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Foto</th>
-                    <th scope="col">Id</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Preferencia</th>
-                    <th scope="col">Dinero disp</th>
-                    <th scope="col">Tirmpo disp</th>
-                    <th scope="col">Acción</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td id="foto"><img src="Imagenes/Usuarios/1_Eowyn_profile.png" id="fotodashboard" alt="Foto"></td>
-                    <td>1</td>
-                    <td>Eowyn</td>
-                    <td>Aventura</td>
-                    <td>10</td>
-                    <td>8</td>
-                    <td>Editar / Eliminar</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td id="foto"><img src="Imagenes/Usuarios/2_Gandalf_profile.png" id="fotodashboard" alt="Foto"></td>
-                    <td>2</td>
-                    <td>Gandalf</td>
-                    <td>Paisaje</td>
-                    <td>100</td>
-                    <td>5</td>
-                    <td>Editar / Eliminar</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td id="foto"><img src="Imagenes/Usuarios/3_Sam_profile.png" id="fotodashboard" alt="Foto"></td>
-                    <td>3</td>
-                    <td>Sam</td>
-                    <td>Degustación</td>
-                    <td>36</td>
-                    <td>8</td>
-                    <td>Editar / Eliminar</td>
-                  </tr>        
-                </tbody>
-            </table>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Foto</th>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Preferencia</th>
+                        <th scope="col">Dinero disp</th>
+                        <th scope="col">Tiempo disp</th>
+                        <th scope="col">Acción</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td id="foto"><img src="Imagenes/Usuarios/1_Eowyn_profile.png" id="fotodashboard" alt="Foto"></td>
+                        <td>1</td>
+                        <td><a href="usuario_detalle.html">Eowyn</a></td>
+                        <td>Aventura</td>
+                        <td>10</td>
+                        <td>8</td>
+                        <td>Editar / Eliminar</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td id="foto"><img src="Imagenes/Usuarios/2_Gandalf_profile.png" id="fotodashboard" alt="Foto"></td>
+                        <td>2</td>
+                        <td>Gandalf</td>
+                        <td>Paisaje</td>
+                        <td>100</td>
+                        <td>5</td>
+                        <td>Editar / Eliminar</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td id="foto"><img src="Imagenes/Usuarios/3_Sam_profile.png" id="fotodashboard" alt="Foto"></td>
+                        <td>3</td>
+                        <td>Sam</td>
+                        <td>Degustación</td>
+                        <td>36</td>
+                        <td>8</td>
+                        <td>Editar / Eliminar</td>
+                    </tr>        
+                    </tbody>
+                </table>
+            </div>
             <a class="btn  btn-miPrincipal" href="#">Agregar Usuario</a>
         </section> 
     </div>

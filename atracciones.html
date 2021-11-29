@@ -36,7 +36,7 @@
                 <ul class="navbar-nav">
                     <li>
 						<audio autoplay controls loop > 
-							<source src="../../celta.mp3" type="audio/mp3">  
+							<source src="sounds/The Hobbit Main Theme.mp3" type="audio/mp3">    
 						</audio>                                
 					</li>
 					<div class=cambiaTema>
@@ -70,10 +70,7 @@
                         data-bs-toggle="dropdown" aria-expanded="false"> Nombre de Usuario
                     </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="ofertar.html">Comprar</a></li>   <!--Desp se puede sacar-->
-                            <li><a class="dropdown-item" href="registerLogin.html">Itinerario</a></li>
-                            <li><a class="dropdown-item" >Tiempo disponible<img src="Imagenes/Varios/RelojDeArena.png" style="width: 20px;" alt=""></a></li>
-                            <li><a class="dropdown-item" >Dinero disponible<img src="Imagenes/Varios/GoldCoins.png" style="width: 20px;" alt=""></a></li>
+                            <li><a class="dropdown-item" href="registerLogin.html">Itinerarios</a></li>
                             <li><a class="dropdown-item" href="dashboard.html">Panel de admin</a></li>   <!-- Se ven unicamente si sos admin -->
                             <li><a class="dropdown-item" href="">Cerrar sesion</a></li>
                         </ul>
@@ -85,54 +82,57 @@
         
         
     <div class="flex container">
-        <section class="lista mt-5">
+        <section class="lista mt-5 text-center">
             <h2 class="fuente">Atracciones</h2>
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Id</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Costo</th>
-                    <th scope="col">Duración</th>
-                    <th scope="col">Cupo</th>
-                    <th scope="col">Tipo</th>
-                    <th scope="col">Acción</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>1</td>
-                    <td>Moria</td>
-                    <td>10</td>
-                    <td>2</td>
-                    <td>6</td>
-                    <td>Aventura</td>
-                    <td>Editar / Eliminar</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>2</td>
-                    <td>Minas Tirith</td>
-                    <td>5</td>
-                    <td>2,5</td>
-                    <td>25</td>
-                    <td>Paisaje</td>
-                    <td>Editar / Eliminar</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>3</td>
-                    <td>La Comarca</td>
-                    <td>3</td>
-                    <td>6,5</td>
-                    <td>150</td>
-                    <td>Degustación</td>
-                    <td>Editar / Eliminar</td>
-                  </tr>
-                </tbody>
-              </table>
+            <!-- <div class="table-responsive">  -->
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Costo</th>
+                        <th scope="col">Duración</th>
+                        <th scope="col">Cupo</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Acción</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>1</td>
+                        <td>Moria</td>
+                        <td>10</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>Aventura</td>
+                        <td>Editar / Eliminar</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>2</td>
+                        <td>Minas Tirith</td>
+                        <td>5</td>
+                        <td>2,5</td>
+                        <td>25</td>
+                        <td>Paisaje</td>
+                        <td>Editar / Eliminar</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>3</td>
+                        <td>La Comarca</td>
+                        <td>3</td>
+                        <td>6,5</td>
+                        <td>150</td>
+                        <td>Degustación</td>
+                        <td>Editar / Eliminar</td>
+                    </tr>
+                    </tbody>
+                </table>
+            <!-- </div> -->
+            <a class="btn  btn-miPrincipal" href="#">Agregar Atracción</a>
         </section> 
     </div>
         

@@ -83,7 +83,6 @@ body{
 	/* background: linear-gradient(var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miPrincipal));  */
 	background: var(--miBackground);
 	color: var(--miLetra2);
-	
 }
 
 .navbar .logo{
