@@ -8,6 +8,7 @@ const currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
   // ...then use the .dark-theme class
   document.body.classList.add("dark-theme");
+  document.getElementById("chk").checked = true;
 }
 
 // Listen for a click on the button 
@@ -25,10 +26,6 @@ chk.addEventListener('change', () => {
   // Then save the choice in localStorage
   localStorage.setItem("theme", theme);
 });
-
-
-
-
 
 
               //Formulario

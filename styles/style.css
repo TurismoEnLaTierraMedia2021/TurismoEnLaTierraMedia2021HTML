@@ -83,6 +83,7 @@ body{
 	/* background: linear-gradient(var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miPrincipal));  */
 	background: var(--miBackground);
 	color: var(--miLetra2);
+	min-height: 100vh;
 }
 
 .navbar .logo{
@@ -214,17 +215,15 @@ a:hover{
 }
 
 #fotodashboard{
+	border-radius: 50%;
 	width: 50%;
+	box-shadow: .2em .2em .2em var(--sadowCard);
 }
 
 td#foto{
 	width: 12%;
 }
 
-td#foto img:hover{
-	transform: scale(3);
-	transition: 400ms;
-}
 
 /*Toggler*/
 
@@ -278,7 +277,12 @@ td#foto img:hover{
 	transform: scale(1); 
 }
 
+.table-responsive{
+	flex: 1 1 100%;
+}
 
-
+.btn-miPrincipal:focus{
+	box-shadow: none;
+}
 
 
