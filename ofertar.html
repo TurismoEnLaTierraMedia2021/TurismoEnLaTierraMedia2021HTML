@@ -18,7 +18,7 @@
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="styles//style.css">
 	<title>Turismo Tierra Media</title>
-	<link rel="icon" type="image/x-icon" href="Imagenes/Varios/Unico_Anello.png">
+	<link rel="icon" type="image/x-icon" href="Imagenes/Varios/Unico_Anello.png">	
 </head>
 
 <body class="light-theme">
@@ -33,7 +33,7 @@
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
 				<ul class="navbar-nav">
 					<li>
-						<audio autoplay controls loop>
+						<audio autoplay controls loop id="myaudio">
 							<source src="sounds/The Hobbit Main Theme.mp3" type="audio/mp3">
 						</audio>
 					</li>
@@ -63,15 +63,11 @@
 							Nombre de
 							Usuario </a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<li><a class="dropdown-item" href="ofertar.html">Comprar</a></li>
-							<!--Desp se puede sacar-->
-							<li><a class="dropdown-item" href="registerLogin.html">Itinerario</a></li>
+							<li><a class="dropdown-item" href="itinerario.html">Itinerario</a></li>
 							<li><a class="dropdown-item">Tiempo disponible<img src="Imagenes/Varios/RelojDeArena.png"
 										style="width: 20px;" alt=""></a></li>
 							<li><a class="dropdown-item">Dinero disponible<img src="Imagenes/Varios/GoldCoins.png"
 										style="width: 20px;" alt=""></a></li>
-							<li><a class="dropdown-item" href="dashboard.html">Panel de admin</a></li>
-							<!-- Se ven unicamente si sos admin -->
 							<li><a class="dropdown-item" href="">Cerrar sesion</a></li>
 						</ul>
 					</li>
@@ -80,10 +76,12 @@
 		</div>
 	</nav>
 
-
 	<div class="flex container mt-5">
 		<main class="home">
 			<section class="mt-5">
+				<article class="container mt-4 text-center">
+					<h1 class="display-4 fuente" >Comprar</h1>
+				</article>
 
 				<div id="carouselExampleIndicators" class="carousel slide lista" data-bs-ride="carousel"
 					data-bs-interval="false">
@@ -184,5 +182,4 @@
 	</footer>
 </body>
 <script src="main.js"></script>
-
 </html>

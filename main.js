@@ -50,13 +50,8 @@ chk.addEventListener('change', () => {
     })
 })()
 
-
-
-
-
-
-
-
-
+        //Volumen del audio
+var audio = document.getElementById("myaudio");
+audio.volume = 0.2;
 
 

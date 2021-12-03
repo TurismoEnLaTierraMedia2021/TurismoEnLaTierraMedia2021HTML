@@ -47,7 +47,8 @@
 	--miLetra: #f4f2f2;
 	--miLetra2: #f4f2f2;
 	--miColorBoton: #f4f2f2;
-	--ballColor: var(--miPrincipal)
+	--ballColor: var(--miPrincipal);
+	--iconos:invert(100%) sepia(3%) saturate(766%) hue-rotate(253deg) brightness(115%) contrast(90%);
 } 
 
 *{
@@ -80,7 +81,6 @@
 }
 
 body{
-	/* background: linear-gradient(var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miBackground), var(--miPrincipal));  */
 	background: var(--miBackground);
 	color: var(--miLetra2);
 	min-height: 100vh;
@@ -106,7 +106,6 @@ body{
 	padding: 1em;
 	border-radius: 7px;
 	border: 1px solid rgba(0,0,0,.125);
-	/* background: linear-gradient(135deg, var(--miColor11) 0%, var(--miBackground) 50%, var(--miColor11) 100%);   */
 	background: var(--miColor11);
 	list-style: none;
 	flex-wrap: wrap;
@@ -284,5 +283,56 @@ td#foto{
 .btn-miPrincipal:focus{
 	box-shadow: none;
 }
+
+audio{
+	opacity: 0.3;
+	width: 15em;
+	height: 2.5em;
+	margin: 0;
+	margin-top: 0.4em;
+	padding: 0;
+}
+
+.edit{
+	width: 25px;
+	margin: 2px;
+	filter: var(--iconos); 
+}
+
+.delete{
+	width: 22px;
+	margin: 2px;
+	filter: var(--iconos); 
+}
+
+.engranaje{
+	filter: var(--iconos); 
+	width: 22px;
+}
+
+table a{
+	text-decoration: none;
+	color: var(--miLetra2);
+}
+
+.modal-footer{
+	background-color: var(--miBackground);
+}
+
+.modal-body{
+	background-color: var(--miBackground);
+}
+
+div .atracciones{
+	
+	text-align: left;
+}
+
+
+
+
+
+
+
 
 
