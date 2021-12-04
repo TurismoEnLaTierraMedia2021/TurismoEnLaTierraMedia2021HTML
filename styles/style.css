@@ -15,6 +15,7 @@
 	--miColor11:#D5CAC8;
 
 	--sadowCard:#848a88;
+	--sadowText:#848a88;
 	--fondoCard: var(--miBackground);
     --miPrincipal: var(--miColor8);
     --miSecundario: var(--miColor8);
@@ -23,6 +24,7 @@
 	--miColorBoton: var(--miBackground);
 	--ballColor: var(--miPrincipal);
 	--backgroundBallColor: var(--miColor5);
+
 }
 
 /*Modo oscuro*/
@@ -41,6 +43,7 @@
 	--miColor11:#0B2522;
 
 	--sadowCard:#000000;
+	--sadowText:#848a88;
 	--fondoCard: var(--miColor5);
 	--miPrincipal: var(--miColor2);
     --miSecundario: var(--miColor8);
@@ -59,8 +62,11 @@
 	font-family: 'IM Fell English SC', serif;
 }
 
+.titulo{
+	text-shadow: .09em .09em .05em var(--sadowText);
+}
+
 .bg-miPrincipal{
-	/*background: linear-gradient(var(--miPrincipal), var(--miPrincipal), var(--miPrincipal), var(--miPrincipal) , var(--miBackground));*/
     background: var(--miPrincipal);
 }
 
@@ -332,7 +338,89 @@ div .atracciones{
 
 
 
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 
+.slider {
+  margin-bottom: 30px;
+  position: relative;
+}
+.slider .owl-item.active.center .slider-card {
+  transform: scale(1.15);
+  opacity: 1;
+  background: var(--fondoCard);
+  border-radius: 5%;
+  max-width: 25rem;
+  min-width: 15rem;
+}
+.slider-card {
+	background: var(--fondoCard);
+	border-radius: 5%;
+	max-width: 25rem;
+	min-width: 15rem;
+	height: 37rem;
+  	padding: 0px 0px;
+  	margin: 50px 15px 90px 15px;
+  	box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  	transform: scale(0.9);
+  	opacity: 0.5;
+  	transition: all 0.3s;
+}
+
+.slider-card div img{ 	 
+	margin: 5%;
+	border-radius: 5%;
+	width: 90% !important;
+}
+
+
+
+.slider-card .iconos {
+	display: flex !important;
+	justify-content: space-evenly !important;
+	align-items: center !important;
+}
+
+.slider-card .iconos img{
+	width: 15% !important;
+	height: 15%;
+	margin: 1%;
+}
+
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+.owl-dots {
+  text-align: center;
+}
+.owl-dots .owl-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background-color: black !important;
+  margin-left: 3px;
+  margin-right: 3px;
+  outline: none;
+}
+.owl-dots .owl-dot.active {
+	background-color: var(--fondoCard) !important;
+}
 
 
 
