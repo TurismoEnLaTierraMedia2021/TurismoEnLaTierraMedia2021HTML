@@ -373,7 +373,7 @@ html {
 .slider-card div img{ 	 
 	margin: 5%;
 	border-radius: 5%;
-	width: 90% !important;
+	width: 85% !important;
 }
 
 
@@ -385,9 +385,8 @@ html {
 }
 
 .slider-card .iconos img{
-	width: 15% !important;
-	height: 15%;
-	margin: 1%;
+	width: 20% !important;
+	height: 20% !important;
 }
 
 .owl-nav .owl-prev {
@@ -422,5 +421,7 @@ html {
 	background-color: var(--fondoCard) !important;
 }
 
-
+.owl-carousel .owl-item img{
+	display: inline-flex;
+}
 
